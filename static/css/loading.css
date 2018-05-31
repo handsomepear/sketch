@@ -1,0 +1,23 @@
+
+#page-loading {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  width: 146px;
+  height: 146px;
+  background: url('../imgs/pageloading.png') no-repeat;
+  background-position: 0 0;
+  animation: pageLoading 2s steps(21) infinite;
+}
+
+@keyframes pageLoading {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -3066px 0;
+  }
+}
