@@ -41,7 +41,7 @@
   height: 41px;
   margin-right: 13px;
   background-size: contain;
-  background: url('../../static/imgs/again.png') no-repeat;
+  background: url('../../static/img/again.png') no-repeat;
 }
 
 .wechat-friend,
@@ -68,10 +68,10 @@
 }
 
 .wechat-friend i {
-  background-image: url('../../static/imgs/wechatFriend.png');
+  background-image: url('../../static/img/wechatFriend.png');
 }
 .wechat-circle i {
-  background-image: url('../../static/imgs/wechatCircle.png');
+  background-image: url('../../static/img/wechatCircle.png');
 }
 
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
@@ -90,7 +90,7 @@
     <div class="photo-container">
       <PhotoArea>
         <template slot="photo-img">
-          <img :src="'http://changefacetestnew.j.cn' + this.$route.query.sketchImg" alt="">
+          <img :src="'http://changeface.j.cn' + this.$route.query.sketchImg" alt="">
         </template>
       </PhotoArea>
     </div>

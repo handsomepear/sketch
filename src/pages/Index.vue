@@ -45,18 +45,18 @@
   margin-right: 73px;
 }
 .album-btn i {
-  background: url('../../static/imgs/album.png') no-repeat;
+  background: url('../../static/img/album.png') no-repeat;
 }
 .camera-btn i {
   width: 45px;
   height: 36px;
-  background: url('../../static/imgs/camera.png') no-repeat;
+  background: url('../../static/img/camera.png') no-repeat;
 }
 
 .sumiao {
   width: 500px;
   height: 918px;
-  background: url('../../static/imgs/sumiao.png') no-repeat;
+  background: url('../../static/img/sumiao.png') no-repeat;
   transform-origin: center;
   transform: scale(1.5);
   box-sizing: border-box;
@@ -84,13 +84,14 @@
 
 <template>
   <div id="index-page">
+    <Loading v-if="showLoading" />
     <div class="photo-container">
       <PhotoArea>
         <template slot="photo-img">
           <div class="sumiao"></div>
         </template>
       </PhotoArea>
-      <Loading v-if="showLoading" />
+      
     </div>
     <div class="button-con">
       <div class="album-btn btn" @click="choosePicHandle">

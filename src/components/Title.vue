@@ -17,7 +17,7 @@
   .back {
     width: 17px;
     height: 31px;
-    background: url('../../static/imgs/back.png') no-repeat;
+    background: url('../../static/img/back.png') no-repeat;
     background-size: contain;
   }
   .title-text {

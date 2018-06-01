@@ -16,7 +16,7 @@
   top: -37px;
   width: 35px;
   height: 62px;
-  background: url('../../static/imgs/pin.png') no-repeat;
+  background: url('../../static/img/pin.png') no-repeat;
   background-size: contain;
 }
 .pin-left {
@@ -65,7 +65,7 @@
   bottom: -17px;
   width: 100%;
   height: 50px;
-  background: url('../../static/imgs/shadow.png') no-repeat;
+  background: url('../../static/img/shadow.png') no-repeat;
   background-size: cover;
 }
 </style>

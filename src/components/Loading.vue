@@ -3,6 +3,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
+  background-color: rgba(0,0,0,.8);
   z-index: 11;
 }
 .loading {
@@ -14,7 +15,7 @@
   margin: auto;
   width: 200px;
   height: 200px;
-  background: url('../../static/imgs/loading.png') no-repeat;
+  background: url('../../static/img/loading.png') no-repeat;
   animation: loading 4s steps(47) infinite;
 }
 @keyframes loading {

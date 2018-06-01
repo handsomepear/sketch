@@ -8,7 +8,7 @@
   margin: auto;
   width: 146px;
   height: 146px;
-  background: url('../imgs/pageloading.png') no-repeat;
+  background: url('../img/pageloading.png') no-repeat;
   background-position: 0 0;
   animation: pageLoading 2s steps(21) infinite;
 }

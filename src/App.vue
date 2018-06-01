@@ -1,11 +1,11 @@
-<style>
+<style scoped>
 #app {
   display: none;
   position: fixed;
   width: 750px;
   height: 100%;
   /* margin: 0 auto; */
-  background: url('../static/imgs/bg.jpg') no-repeat center;
+  background: url('../static/img/bg.jpg') no-repeat center;
   background-size: cover;
 }
 @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
