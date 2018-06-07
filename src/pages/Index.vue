@@ -124,7 +124,7 @@ export default {
   mounted() {
     TOOLS._send1_1('init')
     var that = this
-    that.uid = TOOLS._getQueryString('jcnuserid')
+    that.uid = TOOLS._getQueryString('jcnuserid') || 'fff'
     // native 选择图片之后的回调函数 返回图片的base64数据
     window.getBase64 = function (photobase64) {
       that.showLoading = true
@@ -155,7 +155,7 @@ export default {
       this.showLoading = false
       this.$router.push({ path: '/result', query: { sketchImg: data.imgOurs, shareImg: data.imgShare } })
     },
-    fail() {
+    fail(err) {
       this.showLoading = false
       alert('矮油，好像出错了诶\r\n请重试~')
     }

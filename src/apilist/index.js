@@ -1,4 +1,5 @@
 // const base_url = 'http://192.168.2.77:8080/'
+import axios from 'axios'
 const base_url = 'http://changeface.j.cn/'
 
 const api = {
@@ -14,22 +15,22 @@ export default function getStyle(uid, photoBase64Data, success, fail) {
   let paramsData = new FormData()
   paramsData.append('uid', uid)
   paramsData.append('photoBase64Data', photoBase64Data)
-  fetch(api.changeStyle, {
-    method: 'POST',
-    headers: new Headers({
-      Accept: 'application/json'
-    }),
-    mode: 'cors',
-    body: paramsData
+  axios({
+    method: 'post',
+    url: api.changeStyle,
+    data: paramsData,
+    config: {
+      timeout: 15000,
+      headers: { 'Content-Type': 'multipart/form-data' }
+    }
+  }).then(function(res) {
+    var data = res.data
+    if(data.ok){
+      success(data)
+    }else {
+      fail(data)
+    }
+  }).catch(function(err){
+    fail(err)
   })
-    .then(res => {
-      return res.json()
-    })
-    .then(res => {
-      if (res.ok) {
-        success(res)
-      } else {
-        fail()
-      }
-    })
 }
