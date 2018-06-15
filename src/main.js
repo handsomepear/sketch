@@ -16,6 +16,5 @@ new Vue({
     if (window.app_interface) {
       window.app_interface.setTitleVisible(0) // 隐藏标题栏
     }
-   
   }
 })
